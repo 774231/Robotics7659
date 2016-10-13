@@ -1,0 +1,33 @@
+package com.qualcomm.ftcrobotcontroller.opmodes;
+
+import com.qualcomm.robotcore.eventloop.opmode.OpMode;
+import com.qualcomm.robotcore.hardware.DcMotor;
+
+/**
+ * Created by Jason on 10/12/2016.
+ */
+
+public class MotorTest extends OpMode {
+
+    DcMotor motorRight;
+    //DcMotor motorLeft;
+
+
+    public void init() {
+
+        motorRight = hardwareMap.dcMotor.get("motor_1");
+        //motorLeft = hardwareMap.dcMotor.get("motor_2");
+
+    }
+
+    @Override
+    public void loop() {
+        //motorLeft.setPower(100);
+        motorRight.setPower(100);
+    }
+
+    @Override
+    public void stop() {
+
+    }
+}
