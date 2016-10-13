@@ -7,13 +7,15 @@ import com.qualcomm.robotcore.hardware.DcMotor;
  * Created by Jason on 10/12/2016.
  */
 
-public class MotorTest extends OpMode {
+public class MotorTest extends OpMode 
+{
 
     DcMotor motorRight;
     //DcMotor motorLeft;
 
 
-    public void init() {
+    public void init() 
+    {
 
         motorRight = hardwareMap.dcMotor.get("motor_1");
         //motorLeft = hardwareMap.dcMotor.get("motor_2");
@@ -21,13 +23,14 @@ public class MotorTest extends OpMode {
     }
 
     @Override
-    public void loop() {
+    public void loop() 
+    {
         //motorLeft.setPower(100);
         motorRight.setPower(100);
     }
 
-    @Override
-    public void stop() {
+    //@Override
+    //public void stop() {
 
-    }
+    //}
 }
